@@ -1,0 +1,21 @@
+{
+    "title": "Trigger speak selected text",
+    "rules": [
+      {
+          "description": "Trigger speak selected text",
+          "manipulators": [
+              {
+                  "from": {
+                      "key_code": "right_command"
+                  },
+                  "to": [
+                      {
+                          "key_code": "escape",
+                          "modifiers" : ["option"]
+                      }
+                  ],
+                  "type": "basic"
+              }
+          ]
+      }]
+  }

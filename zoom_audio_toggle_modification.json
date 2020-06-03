@@ -1,0 +1,25 @@
+{
+  "title": "Zoom audio toggle modification",
+  "rules": [
+    {
+        "description": "Eject key triggers two keyboard shortcuts",
+        "manipulators": [
+            {
+                "from": {
+                    "consumer_key_code": "eject"
+                },
+                "to": [
+                    {
+                        "key_code": "a",
+                        "modifiers" : ["command", "shift"]
+                    },
+                    { 
+                        "key_code": "f13",
+                        "modifiers" : ["command"]
+                    }
+                ],
+                "type": "basic"
+            }
+        ]
+    }]
+}
